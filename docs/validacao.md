@@ -18,7 +18,17 @@ As capturas em [screenshots](screenshots) foram produzidas por um navegador exec
 
 ## Publicação
 
-A publicação é executada pelo [workflow do repositório](https://github.com/mariomoutinho/matchcv/actions/workflows/deploy.yml), após as verificações automatizadas. O endereço de entrega está no [README](../README.md). A confirmação pública de acesso será acrescentada após a primeira execução do workflow.
+Publicação concluída e acesso público verificado em **2026-09-30T16:40:54.969Z** (UTC), em navegador novo sem login.
+
+- **Aplicação:** https://mariomoutinho.github.io/matchcv/
+- **Repositório público:** https://github.com/mariomoutinho/matchcv
+- **Workflow da primeira publicação:** https://github.com/mariomoutinho/matchcv/actions/runs/36745709829 — concluído com sucesso.
+- **Commit da aplicação validada:** `75425b53d156b97e0e1bf42fefabb5309b34ce22`.
+- **HTTP:** 200; exemplo executado com match de 56%; nenhum erro de JavaScript capturado.
+- **Saída e entrada:** PDF exportado e reimportado na aplicação publicada; DOCX real importado; revisão/cancelamento confirmados.
+- **Capturas:** as três imagens foram refeitas usando o endereço público, em desktop e mobile escuro.
+
+O [registro estruturado](public-verification.json) contém os resultados e o horário da verificação. O [PDF exportado](examples/curriculo-ats.pdf) é uma saída real do exemplo fictício. O [histórico de Actions](https://github.com/mariomoutinho/matchcv/actions/workflows/deploy.yml) mantém as execuções posteriores.
 
 ## Reproduzir
 
@@ -28,4 +38,4 @@ Execute os comandos de validação descritos no README. Para refazer as capturas
 node scripts/capture-evidence.mjs https://mariomoutinho.github.io/matchcv/
 ```
 
-O script exige Chromium do Playwright instalado. Ele confere HTTP bem-sucedido, resultado de 56%, ausência de erros de JavaScript e largura mobile antes de gravar as capturas.
+O script exige Chromium do Playwright instalado. Ele confere HTTP bem-sucedido, resultado de 56%, ausência de erros de JavaScript e largura mobile e testa exportação de PDF, reimportação de PDF e importação de DOCX. Além das capturas, grava o PDF de exemplo e o registro estruturado de verificação.

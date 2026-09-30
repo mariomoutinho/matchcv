@@ -55,6 +55,42 @@ try {
     ),
   ).toBe(true);
   expect(errors).toEqual([]);
+  const downloadReady = page.waitForEvent("download");
+  await page.getByRole("button", { name: "Exportar PDF" }).click();
+  const download = await downloadReady;
+  expect(download.suggestedFilename()).toBe("curriculo-ats.pdf");
+  await download.saveAs("docs/examples/curriculo-ats.pdf");
+  const fileInput = page.getByLabel("Selecionar arquivo do currículo");
+  await fileInput.setInputFiles("docs/examples/curriculo-ats.pdf");
+  await expect(page.getByLabel("Texto extraído do arquivo")).toHaveValue(
+    /JavaScript/,
+  );
+  await page.getByRole("button", { name: "Cancelar importação" }).click();
+  await fileInput.setInputFiles("e2e/fixtures/curriculo.docx");
+  await expect(page.getByLabel("Texto extraído do arquivo")).toHaveValue(
+    /Graduação em Ciência da Computação, 2024/,
+  );
+  await page.getByRole("button", { name: "Cancelar importação" }).click();
+  expect(errors).toEqual([]);
+  await writeFile(
+    "docs/public-verification.json",
+    JSON.stringify(
+      {
+        url,
+        httpStatus: response.status(),
+        match: 56,
+        screenshots: 3,
+        pdfExport: true,
+        pdfImport: true,
+        docxImport: true,
+        noLogin: true,
+        javascriptErrors: errors,
+        checkedAt: new Date().toISOString(),
+      },
+      null,
+      2,
+    ) + "\n",
+  );
   console.log(
     JSON.stringify(
       {

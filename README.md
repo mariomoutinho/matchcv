@@ -25,7 +25,7 @@ O MatchCV mostra correspondências e ausências com evidências do próprio text
 5. Confira o checklist e, se quiser explorar as perguntas, selecione React. “Não possuo” não acrescenta nada. Para demonstrar a confirmação com dados fictícios, marque “Sim”, escreva `Desenvolvi interfaces com React em um projeto acadêmico.` e confirme a veracidade **apenas no contexto deste exemplo fictício**. Reanalisar passa o exemplo a 81%, sem acrescentar Docker.
 6. Edite, copie ou exporte o currículo. O PDF inclui somente o texto do currículo.
 
-Os textos do exemplo estão em [vaga.txt](docs/examples/vaga.txt) e [curriculo.txt](docs/examples/curriculo.txt). Os dados e o e-mail de demonstração são fictícios. Em um currículo real, confirme apenas experiências que de fato possui.
+Os textos do exemplo estão em [vaga.txt](docs/examples/vaga.txt) e [curriculo.txt](docs/examples/curriculo.txt). Veja também o [PDF realmente exportado pela aplicação](docs/examples/curriculo-ats.pdf). Os dados e o e-mail de demonstração são fictícios. Em um currículo real, confirme apenas experiências que de fato possui.
 
 ## Funcionalidades entregues
 
@@ -107,6 +107,8 @@ Capturas reais do navegador com dados fictícios, produzidas pelo script [script
 ![Comparação das versões e decisões individuais](docs/screenshots/comparacao.png)
 
 ![MatchCV em tela de 320 px e modo escuro](docs/screenshots/mobile-escuro.png)
+
+As capturas foram refeitas no endereço público, sem login. O [registro da verificação pública](docs/public-verification.json) confirma HTTP 200, execução da análise, exportação/reimportação de PDF e leitura de DOCX.
 
 A captura principal no início deste README mostra a análise. O [exemplo passo a passo](docs/exemplo-de-uso.md) descreve as entradas e resultados esperados.
 
