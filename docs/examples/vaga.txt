@@ -1,0 +1,10 @@
+Desenvolvedor(a) Front-end Júnior
+Requisitos obrigatórios:
+- JavaScript
+- Git
+- React
+Diferenciais desejáveis:
+- Docker
+- Front-end
+Responsabilidades:
+Desenvolver interfaces e colaborar com a equipe.

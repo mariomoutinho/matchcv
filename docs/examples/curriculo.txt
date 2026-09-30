@@ -1,0 +1,14 @@
+Ana Exemplo
+ana@example.com
+
+Resumo
+Estudante buscando uma oportunidade de desenvolvimento.
+
+Habilidades
+JavaScript, HTML, CSS e Git.
+
+Projetos
+Desenvolvi uma página de portfólio com HTML, CSS e JavaScript, usando Git para versionamento.
+
+Formação acadêmica
+Análise e Desenvolvimento de Sistemas — conclusão prevista em 2027.
