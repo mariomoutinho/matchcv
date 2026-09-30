@@ -47,12 +47,15 @@ O [mega prompt original](docs/mega-prompt-original.md) preserva o briefing forne
 
 O [mega prompt final consolidado](docs/mega-prompt-final.md) incorpora modo escuro, importação, comparação com decisões, checklist, prioridades e confirmação de experiências. A [evolução detalhada](docs/evolucao.md) relaciona cada pedido ao motivo e à mudança entregue.
 
-Depois da primeira geração, foram pedidos:
+Depois da primeira geração, os pedidos de evolução foram organizados individualmente por funcionalidade:
 
 1. **Modo escuro**, para conforto de leitura, com persistência apenas da preferência.
 2. **Importação de PDF/DOCX**, para reduzir o esforço de entrada, preservando a revisão antes de substituir o texto.
-3. **As quatro funcionalidades restantes**, para explicar prioridades, controlar alterações, encontrar problemas de formatação e recuperar experiências verdadeiras omitidas.
-4. **Publicação e repositório público**, com documentação e evidências para portfólio.
+3. **Comparação entre currículo original e ajustado.** Pedido: mostrar as versões lado a lado e permitir aceitar ou rejeitar cada alteração. Motivo: tornar as mudanças transparentes e manter o controle sobre o texto final.
+4. **Checklist de formatação para ATS.** Pedido: identificar contato ausente, títulos pouco claros, seções vazias, duplicações e sinais de tabelas. Motivo: facilitar a revisão da estrutura, com atualização durante a edição e indicação dos limites da análise textual.
+5. **Separação de requisitos obrigatórios e desejáveis.** Pedido: distinguir as prioridades da vaga e explicar sua influência no match estimado. Motivo: diferenciar exigências essenciais de diferenciais, com pesos explícitos e categoria para requisitos sem prioridade informada.
+6. **Perguntas para completar experiências reais.** Pedido: perguntar sobre competências sem evidência e exigir relato e confirmação antes de incluir informações. Motivo: recuperar experiências verdadeiras omitidas sem inventar qualificações.
+7. **Publicação e repositório público**, com documentação e evidências para portfólio.
 
 **Proveniência:** esta implementação foi produzida com assistência de código no workspace e publicada via GitHub Actions. Não houve exportação do Lovable nesta sessão. O README documenta o processo efetivamente realizado, sem atribuir ao Lovable uma geração que não ocorreu.
 
